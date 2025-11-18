@@ -1,4 +1,4 @@
-module myproject
+module github.com/andrewbytecoder/wailsapp
 
 go 1.23
 

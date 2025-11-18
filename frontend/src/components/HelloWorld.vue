@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import {reactive} from 'vue'
-import {Greet} from '../../wailsjs/go/main/App'
-import {main} from '../../wailsjs/go/models'
+import {Greet} from '../../wailsjs/go/app/App'
+import {app} from '../../wailsjs/go/models'
+import {EventsEmit, EventsOn} from "../../wailsjs/runtime";
 
 const data = reactive({
   name: "Peter",
@@ -9,7 +10,7 @@ const data = reactive({
 })
 
 function greet() {
-  let person = main.Person.createFrom({
+  let person = app.Person.createFrom({
     name: data.name,
     age: 0,
   })
@@ -19,6 +20,16 @@ function greet() {
   })
 }
 
+//  js 到 go 的代码调用
+function showVersion() {
+  EventsEmit("showVersion", "show-version")
+}
+
+// go 到 js 的代码调用
+EventsOn("showUser", function (name: string)  {
+  data.resultText = "用户信息：" + name
+})
+
 </script>
 
 <template>
@@ -27,6 +38,7 @@ function greet() {
     <div id="input" class="input-box">
       <input id="name" v-model="data.name" autocomplete="off" class="input" type="text"/>
       <button class="btn" @click="greet">Greet</button>
+      <button class="btn" @click="showVersion">showVersion</button>
     </div>
   </main>
 </template>
