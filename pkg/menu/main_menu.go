@@ -10,6 +10,7 @@ import (
 )
 
 type Menu struct {
+	// 这里的ctx必须是上面传下来的，否则不能使用
 	ctx context.Context
 	mu  *menu.Menu
 }
