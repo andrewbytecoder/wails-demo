@@ -1,14 +1,20 @@
 <script lang="ts" setup>
 import {reactive} from 'vue'
 import {Greet} from '../../wailsjs/go/main/App'
+import {main} from '../../wailsjs/go/models'
 
 const data = reactive({
-  name: "",
+  name: "Peter",
   resultText: "Please enter your name below 👇",
 })
 
 function greet() {
-  Greet(data.name).then(result => {
+  let person = main.Person.createFrom({
+    name: data.name,
+    age: 0,
+  })
+
+  Greet(person).then(result => {
     data.resultText = result
   })
 }
