@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {reactive} from 'vue'
+import {reactive, ref} from 'vue'
 import {Greet} from '../../wailsjs/go/app/App'
 import {app} from '../../wailsjs/go/models'
 import {EventsEmit, EventsOn} from "../../wailsjs/runtime";
@@ -30,17 +30,26 @@ EventsOn("showUser", function (name: string)  {
   data.resultText = "用户信息：" + name
 })
 
+const  count = ref<number>(0)
+
 </script>
 
 <template>
-  <main>
+<!--  <main>-->
     <div id="result" class="result">{{ data.resultText }}</div>
     <div id="input" class="input-box">
       <input id="name" v-model="data.name" autocomplete="off" class="input" type="text"/>
       <button class="btn" @click="greet">Greet</button>
       <button class="btn" @click="showVersion">showVersion</button>
     </div>
-  </main>
+
+    <!-- 其他内容... -->
+    <div id="app">
+      <button class="hello-world-btn" @click="count++">
+        Count is: {{ count }}
+      </button>
+    </div>
+<!--  </main>-->
 </template>
 
 <style scoped>
@@ -48,6 +57,16 @@ EventsOn("showUser", function (name: string)  {
   height: 20px;
   line-height: 20px;
   margin: 1.5rem auto;
+}
+
+.hello-world-btn {
+  /* 特定的样式 */
+  background-color: #42b983;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
 }
 
 .input-box .btn {
