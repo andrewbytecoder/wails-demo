@@ -19,9 +19,20 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "wails-demo",
-		Width:  1024,
-		Height: 768,
+		Title:         "wails-demo",
+		Width:         1024,
+		Height:        768,
+		DisableResize: false,
+		Fullscreen:    false,
+		// 窗口最大化
+		WindowStartState: options.Normal,
+		// 是否无边框
+		//Frameless: true,
+		MinWidth:  400,
+		MinHeight: 400,
+		// 启动时隐藏窗口，直到调用显示窗口才会显示
+		StartHidden:              false,
+		EnableDefaultContextMenu: true,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},

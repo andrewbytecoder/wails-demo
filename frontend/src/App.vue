@@ -1,23 +1,24 @@
 <script lang="ts" setup>
-
 import HelloWorld from './components/HelloWorld.vue'
-import ButtonShow from "./components/ButtonShow.vue";
-
-
+import ButtonShow from './components/ButtonShow.vue'
+import TodoList from './components/TodoList.vue'
+import Input from "./components/Input.vue";
+import Watch from "./components/Watch.vue";
+import VModel from "./components/VModel.vue";
+import Slot from "./components/Slot.vue";
+import ProvideInject from "./components/ProvideInject.vue";
 </script>
 
 <template>
-<!--  <img id="logo" alt="Wails logo" src="./assets/images/logo-universal.png"/>-->
-<!--  <div class="app-container">-->
-<!--    <div class="component-wrapper">-->
-<!--      <HelloWorld/>-->
-<!--    </div>-->
-<!--    <div class="component-wrapper">-->
-<!--      <ButtonShow />-->
-<!--    </div>-->
-<!--  </div>-->
+  <img id="logo" alt="Wails logo" src="./assets/images/logo-universal.png"/>
   <HelloWorld/>
-  <ButtonShow />
+  <ButtonShow/>
+  <TodoList/>
+  <Input />
+  <Watch />
+  <VModel />
+  <Slot />
+  <ProvideInject />
 </template>
 
 <style>
@@ -31,17 +32,5 @@ import ButtonShow from "./components/ButtonShow.vue";
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-origin: content-box;
-}
-.app-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* 组件间距 */
-}
-
-.component-wrapper {
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
 }
 </style>

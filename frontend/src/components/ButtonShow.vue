@@ -13,14 +13,33 @@ function increment() {
 onMounted(() => {
   console.log(`The initial count is ${count.value}.`)
 })
+const ok = ref(true)
+
+const items = ref([{ message: 'Foo' },
+  { message: 'Bar' },
+    { message: 'Baz' }
+])
+
+onMounted(() => {
+  console.log('The ButtonShow  component mounted.')
+})
 
 </script>
 
 <template>
   <div id="ddd">
+    <h1 v-show="ok">Hello!</h1>
     <button class="button-show-btn" @click="increment">
       Count ingress: {{ count }}
     </button>
+    <button class="button-show-btn" @click="ok = !ok">
+       Show header: {{ ok }}
+    </button>
+<!--    添加列表-->
+    <li v-for="item in items">
+      <span>{{ item.message }}</span>
+      {{ item.message }}
+    </li>
   </div>
 </template>
 

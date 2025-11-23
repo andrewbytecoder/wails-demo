@@ -49,3 +49,6 @@ wails generate module
 所有绑定方法的 TypeScript 声明
 绑定方法用作输入或输出的所有 Go 结构的 TypeScript 声明
 这使得使用相同的强类型数据结构从前端调用 Go 代码变得异常简单。
+
+
+Go 运行时可通过导入 github.com/wailsapp/wails/v2/pkg/runtime 获取。 此包中的所有方法都将 context 作为第一个参数。 此 context 应该从 应用启动回调 或 前端 Dom 加载完成回调 回调方法中获取
