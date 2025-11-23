@@ -7,6 +7,7 @@ import Watch from "./components/Watch.vue";
 import VModel from "./components/VModel.vue";
 import Slot from "./components/Slot.vue";
 import ProvideInject from "./components/ProvideInject.vue";
+import Transitions from "./components/Transitions.vue";
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import ProvideInject from "./components/ProvideInject.vue";
   <VModel />
   <Slot />
   <ProvideInject />
+  <Transitions />
 </template>
 
 <style>
