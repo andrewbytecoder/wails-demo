@@ -1,0 +1,34 @@
+server:
+    port: "8080"
+    read_timeout: 30
+    write_timeout: 30
+    mode: debug
+    activeCluster: "907cab34-53f0-4c31-8b32-e238e5bf5769"
+    encryptionKey: mobSIziSWMBZLMSDIIbuB9kMqc9QebV3
+kubernetes:
+    kubeconfig: /root/.kube/config
+installer:
+    minikubePath: /usr/local/bin/minikube
+    minikubeDriver: docker
+    downloadDir: /tmp/cilikube_downloads
+database:
+    enabled: true
+    type: "sqlite"
+    database: "./data/cilikube.db"
+    host: ""
+    port: 0
+    username: ""
+    password: ""
+    charset: ""
+jwt:
+    secret_key: cilikube-secret-key-change-in-production
+    expire_duration: 24h0m0s
+    issuer: cilikube
+clusters:
+    - id: 907cab34-53f0-4c31-8b32-e238e5bf5769
+      name: Test
+      config_path: default
+      description: test cluster
+      provider: minikube
+      environment: test
+      is_active: true

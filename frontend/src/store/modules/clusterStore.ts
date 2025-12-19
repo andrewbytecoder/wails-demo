@@ -67,11 +67,11 @@ export const useClusterStore = defineStore("cluster", () => {
         // 优先选择后端标记的 active 集群，其次选择列表第一个
         const activeCluster = availableClusters.value.find(c => c.name === activeClusterFromServer.value)
         if (activeCluster) {
-          setSelectedClusterId(activeCluster.id)
+          await setSelectedClusterId(activeCluster.id)
         } else if (availableClusters.value.length > 0) {
-          setSelectedClusterId(availableClusters.value[0].id)
+          await setSelectedClusterId(availableClusters.value[0].id)
         } else {
-          setSelectedClusterId(null)
+          await setSelectedClusterId(null)
         }
       }
     } catch (error) {
@@ -89,7 +89,7 @@ export const useClusterStore = defineStore("cluster", () => {
     selectedClusterId.value = clusterId
     if (clusterId) {
       localStorage.setItem(STORE_KEY_SELECTED_CLUSTER, clusterId)
-      
+
       // 同时调用后端API设置活动集群
       try {
         await setActiveCluster(clusterId)
@@ -107,7 +107,7 @@ export const useClusterStore = defineStore("cluster", () => {
   // Action: 设置当前选中的集群（通过名称，向后兼容）
   async function setSelectedClusterName(clusterName: string | null) {
     if (!clusterName) {
-      setSelectedClusterId(null)
+      await setSelectedClusterId(null)
       return
     }
     const cluster = availableClusters.value.find(c => c.name === clusterName)
