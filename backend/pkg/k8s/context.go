@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ciliverse/cilikube/pkg/utils"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/utils"
 	"github.com/gin-gonic/gin"
 )
 

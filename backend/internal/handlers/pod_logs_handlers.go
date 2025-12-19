@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/pkg/k8s"
-	"github.com/ciliverse/cilikube/pkg/utils"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/utils"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 	corev1 "k8s.io/api/core/v1"

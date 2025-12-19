@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ciliverse/cilikube/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
 	"github.com/gin-gonic/gin"
 )
 

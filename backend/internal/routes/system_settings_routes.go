@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"github.com/ciliverse/cilikube/internal/handlers"
-	"github.com/ciliverse/cilikube/pkg/auth"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/handlers"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/auth"
 	"github.com/gin-gonic/gin"
 )
 

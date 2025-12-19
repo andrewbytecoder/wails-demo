@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"github.com/ciliverse/cilikube/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
 	"gorm.io/gorm"
 )
 

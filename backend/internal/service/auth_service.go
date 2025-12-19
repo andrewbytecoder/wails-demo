@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/internal/store"
-	"github.com/ciliverse/cilikube/pkg/auth"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/auth"
 )
 
 // AuthService provides authentication and user management functionality

@@ -6,8 +6,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

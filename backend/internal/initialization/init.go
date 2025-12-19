@@ -3,13 +3,13 @@ package initialization
 import (
 	"log"
 
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/handlers"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/routes"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 	"github.com/casbin/casbin/v2"
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/internal/handlers"
-	"github.com/ciliverse/cilikube/internal/routes"
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/internal/store"
-	"github.com/ciliverse/cilikube/pkg/k8s"
 	"github.com/gin-gonic/gin"
 	"k8s.io/apimachinery/pkg/runtime"
 )

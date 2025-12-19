@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 )

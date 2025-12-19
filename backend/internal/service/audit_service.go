@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
 )
 
 // AuditService provides audit and monitoring functionality

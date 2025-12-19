@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ciliverse/cilikube/pkg/utils"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/utils"
 )
 
 // SystemSettingsHandler handles system settings operations for administrators

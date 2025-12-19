@@ -7,9 +7,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/pkg/utils"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/utils"
 )
 
 // UserManagementHandler handles user management operations for administrators

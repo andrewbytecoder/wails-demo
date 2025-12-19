@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ciliverse/cilikube/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
 )
 
 type Step string

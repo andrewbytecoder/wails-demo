@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ciliverse/cilikube/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
 	"github.com/gin-gonic/gin"
 )
 

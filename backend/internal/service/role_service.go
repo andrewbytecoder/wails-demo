@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
 )
 
 // RoleService provides role management functionality

@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

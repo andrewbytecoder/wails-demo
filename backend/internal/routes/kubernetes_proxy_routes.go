@@ -3,7 +3,7 @@ package routes
 import (
 	"github.com/gin-gonic/gin"
 
-	"github.com/ciliverse/cilikube/internal/handlers"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/handlers"
 )
 
 func KubernetesProxyRoutes(router *gin.RouterGroup, handler *handlers.ProxyHandler) {

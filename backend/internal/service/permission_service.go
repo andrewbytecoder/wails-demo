@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
 	"github.com/casbin/casbin/v2"
-	"github.com/ciliverse/cilikube/internal/store"
 )
 
 // PermissionService provides permission management functionality

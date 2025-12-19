@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/pkg/database"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/database"
 	"gorm.io/gorm"
 )
 

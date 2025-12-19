@@ -8,9 +8,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/internal/store"
-	"github.com/ciliverse/cilikube/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 )
 
 // ClusterService provides business logic around cluster management.

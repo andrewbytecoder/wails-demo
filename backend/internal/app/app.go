@@ -15,14 +15,14 @@ import (
 	"github.com/casbin/casbin/v2"
 	"github.com/gin-gonic/gin"
 
-	"github.com/ciliverse/cilikube/configs"
-	"github.com/ciliverse/cilikube/internal/initialization"
-	"github.com/ciliverse/cilikube/internal/logger"
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/internal/store"
-	"github.com/ciliverse/cilikube/pkg/auth"
-	"github.com/ciliverse/cilikube/pkg/database"
-	"github.com/ciliverse/cilikube/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/configs"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/initialization"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/logger"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/store"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/auth"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/database"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 )
 
 type Application struct {

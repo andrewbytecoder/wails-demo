@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ciliverse/cilikube/internal/models"
-	"github.com/ciliverse/cilikube/internal/service"
-	"github.com/ciliverse/cilikube/pkg/auth"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/models"
+	"github.com/andrewbytecoder/wailsapp/backend/internal/service"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/auth"
 	"github.com/gin-gonic/gin"
 )
 

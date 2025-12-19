@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/ciliverse/cilikube/pkg/k8s"
+	"github.com/andrewbytecoder/wailsapp/backend/pkg/k8s"
 
 	"github.com/gin-gonic/gin"
 	"k8s.io/apimachinery/pkg/util/proxy"
